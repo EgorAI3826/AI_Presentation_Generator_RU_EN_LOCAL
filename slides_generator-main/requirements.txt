@@ -1,0 +1,23 @@
+googletrans==4.0.0-rc1
+httpx
+fastapi
+gradio
+huggingface_hub
+numpy
+Pillow
+pydantic
+python-dotenv
+python_pptx
+Requests
+scipy
+setuptools
+scikit-image
+torch
+torchvision
+tqdm
+uvicorn
+
+einops
+accelerate
+sentencepiece
+-r Kandinsky-3/requirements.txt
