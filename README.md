@@ -42,3 +42,24 @@ python main.py -d "Сгенерируй презентацию про плане
 ## Настройка модели:
 
 Если вы хотите использовать другую модель для генерации текста или изображений, откройте файл `slides_generator-main\src\gigachat.py` и измените настройки. В текущей версии используется модель GigaChat 20B(Q8 от ai-sage), интегрированная через LM Studio.
+
+
+```
+ДЛЯ РАБОТЫ С МОДЕЛЬЮ GIGACHAT В LM Studio:
+
+Нужно настраивать секцию с Prompt Template (https://lmstudio.ai/docs/configuration/prompt-template)
+
+Template Settings
+- Type: Manual
+- Mode: Custom
+
+Template Fields
+Before System: <s>
+After System: <|message_sep|>
+Before User: user<|role_sep|>
+After User: <|message_sep|>
+Before Assistant: available functions<|role_sep|>[]<|message_sep|>assistant<|role_sep|>
+After Assistant: <|message_sep|>
+
+Additional Settings
+Additional Stop Strings: [Empty/Not Set]```
